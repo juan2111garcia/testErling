@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbería Cortes y Estilos YD | Estilo, Cuidado y Precisión</title>
+  <meta name="description" content="Cortes clásicos y modernos, ritual de barba y cuidado personal en El Crucero, Managua." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#121212',
+              card: '#1A1A1A',
+              gold: '#C8A97E',
+              goldHover: '#B39366',
+              cream: '#F5F2EB',
+              muted: '#A3A3A3'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-brand-cream font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl tracking-wider text-brand-cream font-bold">
+        CORTES & ESTILOS <span class="text-brand-gold">YD</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm tracking-wide text-brand-muted">
+        <a href="#servicios" class="hover:text-brand-gold transition">Servicios</a>
+        <a href="#experiencia" class="hover:text-brand-gold transition">La Experiencia</a>
+        <a href="#reservar" class="hover:text-brand-gold transition">Reservar</a>
+        <a href="#ubicacion" class="hover:text-brand-gold transition">Ubicación</a>
+      </nav>
+      <a href="#reservar" class="bg-brand-gold text-brand-dark px-5 py-2.5 text-xs uppercase tracking-widest font-semibold rounded hover:bg-brand-goldHover transition">
+        Agendar Cita
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(200,169,126,0.14),_transparent_60%)]"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <p class="text-brand-gold uppercase tracking-[0.25em] text-xs mb-4">
+        El Crucero • Managua
+      </p>
+      <h1 class="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6">
+        Precisión, estilo y <span class="italic text-brand-gold">cuidado personal</span>
+      </h1>
+      <p class="text-brand-muted text-base md:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+        Un espacio diseñado para desconectar de la rutina. Cortes a medida, ritual tradicional de barba con toalla caliente y atención personalizada.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#reservar" class="bg-brand-gold text-brand-dark px-8 py-4 text-xs uppercase tracking-widest font-semibold rounded hover:bg-brand-goldHover transition">
+          Reservar por WhatsApp
+        </a>
+        <a href="#servicios" class="border border-white/20 text-brand-cream px-8 py-4 text-xs uppercase tracking-widest font-semibold rounded hover:border-brand-gold hover:text-brand-gold transition">
+          Ver Servicios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-24 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-brand-gold text-xs uppercase tracking-[0.2em]">Menú de Servicios</span>
+        <h2 class="font-serif text-4xl md:text-5xl mt-2">Nuestros Tratamientos & Cortes</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Item 1 -->
+        <div class="bg-brand-card p-8 rounded-lg border border-white/5 hover:border-brand-gold/40 transition">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-serif text-2xl">Corte Clásico o Moderno</h3>
+            <span class="text-brand-gold font-semibold">C$ ---</span>
+          </div>
+          <p class="text-brand-muted text-sm font-light leading-relaxed">
+            Asesoría según tu tipo de rostro, degradado (fade) o tijera de precisión, lavado refrescante y peinado con productos profesionales.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-brand-card p-8 rounded-lg border border-white/5 hover:border-brand-gold/40 transition">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-serif text-2xl">Ritual de Barba & Toalla Caliente</h3>
+            <span class="text-brand-gold font-semibold">C$ ---</span>
+          </div>
+          <p class="text-brand-muted text-sm font-light leading-relaxed">
+            Perfilado a navaja, compresas de vapor con aceites esenciales, exfoliación suave e hidratación con bálsamo post-afeitado.
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-brand-card p-8 rounded-lg border border-white/5 hover:border-brand-gold/40 transition">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-serif text-2xl">Experiencia Completa YD</h3>
+            <span class="text-brand-gold font-semibold">C$ ---</span>
+          </div>
+          <p class="text-brand-muted text-sm font-light leading-relaxed">
+            Combinación de corte personalizado + ritual completo de barba + mascarilla facial purificante y masaje capilar relajante.
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-brand-card p-8 rounded-lg border border-white/5 hover:border-brand-gold/40 transition">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3 class="font-serif text-2xl">Cuidado Facial & Limpieza</h3>
+            <span class="text-brand-gold font-semibold">C$ ---</span>
+          </div>
+          <p class="text-brand-muted text-sm font-light leading-relaxed">
+            Limpieza profunda de poros, vaporización, mascarilla revitalizante e hidratación para mantener una piel fresca y saludable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- La Experiencia -->
+  <section id="experiencia" class="py-24 px-6 bg-brand-card/50 border-t border-white/5">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <div class="w-12 h-12 mx-auto mb-5 rounded-full border border-brand-gold/40 flex items-center justify-center text-brand-gold font-serif text-xl">01</div>
+        <h3 class="font-serif text-2xl mb-3">Atención Sin Prisas</h3>
+        <p class="text-brand-muted text-sm font-light leading-relaxed">
+          Cada cita tiene el tiempo dedicado para garantizar un acabado limpio y adaptado a tu estilo.
+        </p>
+      </div>
+      <div>
+        <div class="w-12 h-12 mx-auto mb-5 rounded-full border border-brand-gold/40 flex items-center justify-center text-brand-gold font-serif text-xl">02</div>
+        <h3 class="font-serif text-2xl mb-3">Higiene & Esterilización</h3>
+        <p class="text-brand-muted text-sm font-light leading-relaxed">
+          Protocolos estrictos de desinfección en cada herramienta y estaciones impecables en todo momento.
+        </p>
+      </div>
+      <div>
+        <div class="w-12 h-12 mx-auto mb-5 rounded-full border border-brand-gold/40 flex items-center justify-center text-brand-gold font-serif text-xl">03</div>
+        <h3 class="font-serif text-2xl mb-3">Ambiente Relajante</h3>
+        <p class="text-brand-muted text-sm font-light leading-relaxed">
+          Música ambiental, clima agradable en El Crucero y un espacio pensado para tu comodidad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reserva rápida por WhatsApp -->
+  <section id="reservar" class="py-24 px-6 border-t border-white/5">
+    <div class="max-w-xl mx-auto bg-brand-card p-8 md:p-10 rounded-xl border border-white/10">
+      <div class="text-center mb-8">
+        <span class="text-brand-gold text-xs uppercase tracking-[0.2em]">Agenda Directa</span>
+        <h2 class="font-serif text-3xl md:text-4xl mt-2">Reserva tu Espacio</h2>
+        <p class="text-brand-muted text-sm mt-2">Completa los datos y confirma al instante por WhatsApp.</p>
+      </div>
+
+      <form id="bookingForm" class="space-y-4">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-brand-muted mb-1.5">Tu Nombre</label>
+          <input type="text" id="clientName" required placeholder="Ej. Carlos Mendoza"
+            class="w-full bg-brand-dark border border-white/15 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-gold" />
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-brand-muted mb-1.5">Servicio</label>
+          <select id="serviceSelect"
+            class="w-full bg-brand-dark border border-white/15 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-gold">
+            <option value="Corte Clásico o Moderno">Corte Clásico o Moderno</option>
+            <option value="Ritual de Barba & Toalla Caliente">Ritual de Barba & Toalla Caliente</option>
+            <option value="Experiencia Completa YD">Experiencia Completa YD</option>
+            <option value="Cuidado Facial & Limpieza">Cuidado Facial & Limpieza</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-brand-muted mb-1.5">Día preferido</label>
+            <input type="date" id="bookingDate" required
+              class="w-full bg-brand-dark border border-white/15 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-gold" />
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-brand-muted mb-1.5">Hora aproximada</label>
+            <input type="time" id="bookingTime" required
+              class="w-full bg-brand-dark border border-white/15 rounded px-4 py-3 text-sm focus:outline-none focus:border-brand-gold" />
+          </div>
+        </div>
+
+        <button type="submit"
+          class="w-full mt-4 bg-brand-gold text-brand-dark py-4 rounded text-xs uppercase tracking-widest font-semibold hover:bg-brand-goldHover transition">
+          Enviar Solicitud por WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Ubicación y Footer -->
+  <footer id="ubicacion" class="py-16 px-6 border-t border-white/10 bg-black/40">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <h4 class="font-serif text-xl text-brand-cream mb-3">Barbería Cortes y Estilos YD</h4>
+        <p class="text-brand-muted font-light leading-relaxed">
+          Estilo, detalle y bienestar masculino en un solo lugar.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-widest text-brand-gold mb-3">Ubicación</h4>
+        <p class="text-brand-muted font-light">
+          Km 27 Carretera Sur,<br />
+          El Crucero, Managua, Nicaragua.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-widest text-brand-gold mb-3">Horario</h4>
+        <p class="text-brand-muted font-light">
+          Lunes a Sábado: 9:00 AM – 7:00 PM<br />
+          Domingos: Previa cita
+        </p>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-xs text-brand-muted">
+      © <span id="year"></span> Barbería Cortes y Estilos YD. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // IMPORTANTE: Cambia este número por tu WhatsApp real (código de país 505 + 8 dígitos, sin el signo +)
+    const WHATSAPP_NUMBER = "50588888888";
+
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('clientName').value.trim();
+      const service = document.getElementById('serviceSelect').value;
+      const date = document.getElementById('bookingDate').value;
+      const time = document.getElementById('bookingTime').value;
+
+      const message = `Hola, me gustaría agendar una cita en Barbería Cortes y Estilos YD:%0A%0A` +
+                      `• *Nombre:* ${encodeURIComponent(name)}%0A` +
+                      `• *Servicio:* ${encodeURIComponent(service)}%0A` +
+                      `• *Fecha:* ${encodeURIComponent(date)}%0A` +
+                      `• *Hora:* ${encodeURIComponent(time)}`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+    });
+  </script>
+</body>
+</html>
